@@ -1,5 +1,5 @@
 select
-    *,,
+    *,
     -- category
     case
         when regexp_contains(lower(model_name), 't-shirt')
@@ -15,5 +15,6 @@ select
         when regexp_contains(lower(model_name), 'tour de cou|tapis|gourde')
         then 'Accessories'
         else null
-    end as model_type
+    end as model_type,
+if(stock > 0, 1, 0) as in_stock
 from {{ ref("cc_stock") }}
