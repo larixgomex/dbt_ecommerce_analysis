@@ -1,5 +1,5 @@
 select
-    *,
+    *,,
     -- category
     case
         when regexp_contains(lower(model_name), 't-shirt')
@@ -8,7 +8,7 @@ select
         then 'Short'
         when regexp_contains(lower(model_name), 'legging')
         then 'Legging'
-        when regexp_contains(lower(model_name), 'brassière|crop-top')
+        when regexp_contains(lower(model_name), 'brassi.re|crop-top')
         then 'Crop-top'
         when regexp_contains(lower(model_name), 'débardeur|haut')
         then 'Top'
