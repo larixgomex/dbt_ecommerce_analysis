@@ -1,1 +1,1 @@
-SELECT * FROM `deft-station-407208.circle.cc_stock`
+with stock as (select * from {{ ref("stg_cc_stock") }}) select * from stock
