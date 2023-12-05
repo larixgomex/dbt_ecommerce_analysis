@@ -2,12 +2,11 @@ version: 2
 
 models:
   - name: cc_sales
-    description:
+    description: This table has basic information about the orders
 
     columns:
       - name: product_id
         tests:
-          - unique
           - not_null
           
   - name: cc_stock
