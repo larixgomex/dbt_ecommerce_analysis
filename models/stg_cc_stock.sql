@@ -1,7 +1,7 @@
 SELECT
   model
   ,color
-  ,coalesce(size,"no-size") as size
+  ,size
   ,model || "_" || color || "_" || coalesce(size,"no-size") AS product_id 
   -- name
   ,model_name

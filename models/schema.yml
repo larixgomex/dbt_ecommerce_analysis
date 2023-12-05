@@ -13,7 +13,7 @@ models:
     description: This table has basic information about the catalog of products
 
     columns:
-      - name: model
+      - name: product_id
         tests:
           - unique
           - not_null

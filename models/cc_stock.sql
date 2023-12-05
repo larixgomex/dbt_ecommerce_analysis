@@ -1,3 +1,3 @@
 with
     stock as (select * from {{ ref("stg_cc_stock") }})
-SELECT * FROM stock where product_id IS NULL
+SELECT * FROM stock 
