@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: cc_sales
+    description: This table has basic information about the orders
+
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          
+  - name: cc_stock
+    description: This table has basic information about the catalog of products
+
+    columns:
+      - name: model
+        tests:
+          - unique
+          - not_null
