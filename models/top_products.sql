@@ -1,0 +1,1 @@
+with top as (select * from {{ ref("int_cc_top_products") }}) select * from top
