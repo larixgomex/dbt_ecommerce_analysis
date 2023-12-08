@@ -1,7 +1,5 @@
-SELECT
-  product_id
-  ,SUM(qty) AS qty
+select product_id, sum(qty) as qty
 from {{ ref("cc_sales") }}
-GROUP BY product_id
-ORDER BY qty DESC
-LIMIT 10
+group by product_id
+order by qty desc
+limit 10
