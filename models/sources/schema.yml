@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: bq # required
+    description: 'cc_sports tables from bq'
+    database: deft-station-407208
+    schema: circle
+    tables:
+      - name: cc_stock  # enabled
+      - name: cc_sales  # enabled
+        config:
+          enabled: true
