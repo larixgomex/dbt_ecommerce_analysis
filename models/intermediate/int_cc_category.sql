@@ -17,4 +17,4 @@ select
         else null
     end as model_type,
 if(stock > 0, 1, 0) as in_stock
-from {{ ref("cc_stock") }}
+from {{ ref("_cc_stock") }}
