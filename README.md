@@ -1,6 +1,6 @@
-# E-commerce dbt models
+# ⭐️ E-commerce dbt models
  
-This project focused on setting dbt models for the purchasing team in an e-commerce store.
+This project focused on setting dbt models for the purchasing team in an e-commerce sportswear store.
 The goal is to monitor stock to avoid stock-outs and to order the right products at the right time.
 
 The different steps of this project are:
